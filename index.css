@@ -72,12 +72,16 @@ h2 {
     font-style: italic;
 }
 
+.column {
+    columns: 2;
+}
+
 .section-content {
     max-width: 50em;
-    width: 100%;
+    width: calc(100% - 20px);
     float: center;
     margin: auto;
-    text-align: justify;
+    padding: 10px;
 }
 
 /* Section: aboutme-content: modal&buttons */
@@ -89,11 +93,8 @@ code[class*=language-],pre[class*=language-] {
 }
 
 #cv-img {
-    float: right;
-    width: 240px;
-    margin-top: 4px;
-    margin-left: 20px;
-    margin-bottom: 14px;
+    height: 7em;
+    float: left;
 }
 
 /* Section: Development-content: modal&buttons */
