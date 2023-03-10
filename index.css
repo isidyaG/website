@@ -9,7 +9,7 @@
     display: inline;
     width: inherit;
     height: 150px; 
-    text-shadow: 7px 7px 10px #660066;
+    text-shadow: 7px 7px 8px #660066;
 }
 
 /* Section: body&HTML! */
@@ -17,7 +17,7 @@
 
 body {
     font-family: "Courier";
-    font-size: 26px;
+    font-size: 22px;
     color: #F0F0F0;
     margin: 0px 0px 0px 0px;
     background-image: url('./images/wolf.jpg');
@@ -73,7 +73,8 @@ h2 {
 }
 
 .section-content {
-    max-width: 1000px;
+    max-width: 50em;
+    width: 100%;
     float: center;
     margin: auto;
     text-align: justify;
@@ -84,8 +85,16 @@ h2 {
 
 code[class*=language-],pre[class*=language-] {
     font-size: 0.94em;
+    border-radius: 32px;
 }
 
+#cv-img {
+    float: right;
+    width: 240px;
+    margin-top: 4px;
+    margin-left: 20px;
+    margin-bottom: 14px;
+}
 
 /* Section: Development-content: modal&buttons */
 /* ---------------------------------------------------------- */
@@ -157,7 +166,7 @@ button:hover {
 
 .section { 
     background-position: center bottom;
-    background-size: 100% 100px;
+    background-size: 100% 70px;
     background-repeat: no-repeat;
     width: 100%;
     float: left;
