@@ -34,7 +34,6 @@ html {
    scroll-behavior: smooth;
 }
 
-
 /* Section: menu! */
 /* ---------------------------------------------------------- */
 
@@ -112,7 +111,7 @@ code[class*=language-],pre[class*=language-] {
 }
 
 .inner {
-    overflow: scroll;
+    overflow: auto;
     height: 100vh;
 }
 
