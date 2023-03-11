@@ -79,7 +79,6 @@ h2 {
 .section-content {
     max-width: 50em;
     width: calc(100% - 20px);
-    float: center;
     margin: auto;
     padding: 10px;
 }
@@ -100,14 +99,19 @@ code[class*=language-],pre[class*=language-] {
 /* Section: Development-content: modal&buttons */
 /* ---------------------------------------------------------- */
 
+.inner {
+    overflow: scroll;
+    height: 100vh;
+}
+
 .modal {
     display: none; /* hidden by default */
     z-index: 1;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-45%);
-    overflow: auto;
+    max-height: 90%;
+    width: 90%;
+    top: 3%;
+    left: 5%;
     border-radius: 32px;
     background-color: rgb(0,0,0); /* fallback */
     background-color: rgba(0,0,0,0.8); /* black with opacity */
@@ -121,9 +125,9 @@ code[class*=language-],pre[class*=language-] {
     border-radius: 32px;
 }
 
-img {
+.modal-img {
     border-radius: 20px;
-    padding: 4px 6px; /* tRbL */
+    width: 100%;
 }
 
 .close {

@@ -8,143 +8,94 @@
     <script type="text/javascript" src="./index.js"></script>
   </head>
   <body>
-    <div class="section section-heading">
-      <div class="section-content">  
-        <h1 class="heading">
+    <div class="inner">
+      <div class="section section-heading">
+        <div class="section-content">  
+          <h1 class="heading">
             <span class="heading-title">resumé 0.9.3</span>
-        </h1>
-        <p class="heading">
-          <a href="#About Me"><span class="menu-item">About Me</span></a> 
-          <a href="#Development"><span class="menu-item">Development</span></a>
-          <a href="#Blog"><span class="menu-item">Blog</span></a>
-        </p>
-      </div>
-    </div>
-    <div class="section section-me">
-      <div class="section-content">
-        <h2 id="About Me">About Me</h2>
-        <div class="column">
-          <img id="cv-img" src="./images/lady.jpg" alt="cv"></img>
-          <p>
-            Hi there, my name is Hristina, a 27 years old girl with love for
-            cats (and other animals, yes :D).
-          </p>
-          <p>
-            My origins are from North Macedonia, but for the last 4 years
-            I've made a new home in Germany, in the cozy city of Freiburg.
-            I'm a curious person by nature and love to learn about varieties
-            of topics. But, in particular I developed passion for computers
-            and how they work, so I frequently spend my nights tinkering with
-            my linux system, changing keybindings of my tiling window manager
-            (i3) or obsessively designing the polybar to sit juuuust right.
-          </p>
-          <p>
-            As I dwelled deeper, I've decided to work towards the goal of
-            transforming that passion into a profession, with hope that I
-            will find opportunities which will allow me to learn more and use
-            that knowledge practically.
-          </p>
-          <p>
-            As a display of my ongoing efforts, you can find my contact
-            information in the following Javascript object:<br/>
+          </h1>
+          <p class="heading">
+            <a href="#About Me"><span class="menu-item">About Me</span></a> 
+            <a href="#Development"><span class="menu-item">Development</span></a>
+            <a href="#Blog"><span class="menu-item">Blog</span></a>
           </p>
         </div>
-        <pre><code class="lang-js">let contactData = { 
+      </div>
+      <div class="section section-me">
+        <div class="section-content">
+          <h2 id="About Me">About Me</h2>
+          <div class="column">
+            <img id="cv-img" src="./images/lady.jpg" alt="cv"></img>
+            <p>
+              Hi there, my name is Hristina, a 27 years old girl with love for
+              cats (and other animals, yes :D).
+            </p>
+            <p>
+              My origins are from North Macedonia, but for the last 4 years
+              I've made a new home in Germany, in the cozy city of Freiburg.
+              I'm a curious person by nature and love to learn about varieties
+              of topics. But, in particular I developed passion for computers
+              and how they work, so I frequently spend my nights tinkering with
+              my linux system, changing keybindings of my tiling window manager
+              (i3) or obsessively designing the polybar to sit juuuust right.
+            </p>
+            <p>
+              As I dwelled deeper, I've decided to work towards the goal of
+              transforming that passion into a profession, with hope that I
+              will find opportunities which will allow me to learn more and use
+              that knowledge practically.
+            </p>
+            <p>
+              As a display of my ongoing efforts, you can find my contact
+              information in the following Javascript object:<br/>
+            </p>
+          </div>
+          <pre><code class="lang-js">let contactData = { 
     name: "hristina",
     mail: "hrist.grozdanova" + "@" + "gmail.com", // spam protection
     github: "github.com/isidyag"
 }</code></pre>
-      </div>   
-    </div>
-    <div class="section section-dev">
-      <div class="section-content">  
-        <h2 id="Development">Development</h2>
-            <p>I'm still new at programming, but at the moment I'm learning<br/>
-              <img src="./images/logo_html.png" width="10" height="15"/><button id="HTML" class="modal_button"> check HTML</button>
-              <img src="./images/logo_css.png" width="10" height="15"/><button id="CSS" class="modal_button"> check CSS</button>
-              <img src="./images/logo_js.png" width="10" height="15"/><button id="JS" class="modal_button"> check Javascript</button>
-            </p>
-        <div id="Modal_1" class="modal">
-          <div class="modal-content">
-              <img src="./images/checkhtml.png"/>
-              <span class="close">»[x]«</span>
-          </div>
-        </div>  
-        <div id="Modal_2" class="modal">
-          <div class="modal-content">
-              <img src="./images/checkcss.png"/>
-              <span class="close">»[x]«</span>
-          </div>
-        </div>  
-        <div id="Modal_3" class="modal">
-          <div class="modal-content">
-              <img src="./images/checkjs.png"/>
-              <span class="close">»[x]«</span>
-          </div>
-        </div>  
+        </div>   
       </div>
-    </div>  
-    <div class="section section-blog">
-      <div class="section-content">  
-        <h2 id="Blog">Blog</h2>
-        <h3>Log Entry 2023-02-26 18:56:25</h3>
-        <p class="blog-post">Added more content. Soon the menu will work, just give me a bit of time...</p>
-        <h3>Log Entry 2023-02-26 18:15:15</h3>
-        <p class="blog-post">Now I need to think what to write...</p>
-        <h3>Log Entry 2023-02-26 18:13:35</h3>
-        <p class="blog-post">The Website has been created!</p>
+      <div class="section section-dev">
+        <div class="section-content">  
+          <h2 id="Development">Development</h2>
+              <p>I'm still new at programming, but at the moment I'm learning<br/>
+                <img src="./images/logo_html.png" width="10" height="15"/><button id="HTML" class="modal_button"> check HTML</button>
+                <img src="./images/logo_css.png" width="10" height="15"/><button id="CSS" class="modal_button"> check CSS</button>
+                <img src="./images/logo_js.png" width="10" height="15"/><button id="JS" class="modal_button"> check Javascript</button>
+              </p>
+        </div>
+      </div>  
+      <div class="section section-blog">
+        <div class="section-content">  
+          <h2 id="Blog">Blog</h2>
+          <h3>Log Entry 2023-02-26 18:56:25</h3>
+          <p class="blog-post">Added more content. Soon the menu will work, just give me a bit of time...</p>
+          <h3>Log Entry 2023-02-26 18:15:15</h3>
+          <p class="blog-post">Now I need to think what to write...</p>
+          <h3>Log Entry 2023-02-26 18:13:35</h3>
+          <p class="blog-post">The Website has been created!</p>
+        </div>
       </div>
     </div>
+      <div id="Modal_1" class="modal">
+        <div class="modal-content">
+          <img class="modal-img" src="./images/checkhtml.png"/>
+          <span class="close">»[x]«</span>
+        </div>
+      </div>  
+      <div id="Modal_2" class="modal">
+        <div class="modal-content">
+          <img class="modal-img" src="./images/checkcss.png"/>
+          <span class="close">»[x]«</span>
+        </div>
+      </div>  
+      <div id="Modal_3" class="modal">
+        <div class="modal-content">
+          <img class="modal-img" src="./images/checkjs.png"/>
+          <span class="close">»[x]«</span>
+        </div>
+      </div>  
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
