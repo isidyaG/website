@@ -32,6 +32,7 @@ html {
    scroll-behavior: smooth;
 }
 
+
 /* Section: menu! */
 /* ---------------------------------------------------------- */
 
@@ -98,6 +99,10 @@ code[class*=language-],pre[class*=language-] {
 
 /* Section: Development-content: modal&buttons */
 /* ---------------------------------------------------------- */
+
+.inline-img {
+    height: 1em;
+}
 
 .inner {
     overflow: scroll;
