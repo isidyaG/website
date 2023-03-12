@@ -23,7 +23,7 @@ h2 {
 
 body {
     font-family: "Courier";
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #F0F0F0;
     margin: 0px 0px 0px 0px;
     background-image: url('./images/wolf.jpg');
@@ -87,9 +87,10 @@ p {
 }
 
 .column {
-    columns: 18rem;
-    column-gap: 1em;
+    columns: 22rem;
+    column-gap: 1.5em;
     hyphens: auto;
+    text-align: justify;
 }
 
 .section-content {
@@ -142,7 +143,7 @@ code[class*=language-],pre[class*=language-] {
     display: none; /* hidden by default */
     z-index: 1;
     position: absolute;
-    max-height: 90%;
+    max-height: 90vh;
     width: 90%;
     top: 3%;
     left: 5%;
@@ -162,6 +163,8 @@ code[class*=language-],pre[class*=language-] {
 .modal-img {
     border-radius: 20px;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .close {
