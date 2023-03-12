@@ -21,31 +21,23 @@ window.onload = function() {
             modals[i].style.display = "none";
         }
     }
+
+    var section_menu = document.getElementsByClassName("section-menu")[0];
+    var sticky = section_menu.offsetTop;
+    
+    var inner = document.getElementsByClassName("inner")[0];
+
+    inner.addEventListener("scroll", function() {
+        if (inner.scrollTop > sticky) {
+            section_menu.classList.add("sticky");
+            let scrollBarWidth = inner.offsetWidth - inner.clientWidth;
+            section_menu.style.width = "calc(100% - " + scrollBarWidth.toString() + "px)";
+            // section_menu.style.top = window.pageYOffset.toString();
+        } else {
+            section_menu.classList.remove("sticky");
+            section_menu.style.width = "100%";
+        }
+     })
+    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

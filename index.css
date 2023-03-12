@@ -27,7 +27,6 @@ body {
     background-attachment: fixed;
     background-size: cover;
     filter: opacity(0.92);
-/*    background-image:url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#7d7dff" fill-opacity="0.8" d="M0,128L34.3,112C68.6,96,137,64,206,74.7C274.3,85,343,139,411,160C480,181,549,171,617,154.7C685.7,139,754,117,823,128C891.4,139,960,181,1029,186.7C1097.1,192,1166,160,1234,165.3C1302.9,171,1371,213,1406,234.7L1440,256L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>'); */ 
 }
 
 html {
@@ -67,8 +66,11 @@ a:link {
 /* Section: content! */
 /* ---------------------------------------------------------- */
 
-h2 {
-    font-weight: bold;
+.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
 }
 
 p {
@@ -211,9 +213,32 @@ button:hover {
 
 .section-heading {
     background-color: #2895BA;
-    background-image: url('./images/head.svg');
-/*    background-image:url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#7d7dff" fill-opacity="0.8" d="M0,128L34.3,112C68.6,96,137,64,206,74.7C274.3,85,343,139,411,160C480,181,549,171,617,154.7C685.7,139,754,117,823,128C891.4,139,960,181,1029,186.7C1097.1,192,1166,160,1234,165.3C1302.9,171,1371,213,1406,234.7L1440,256L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>'); */
+    padding-top: 5px;
+    padding-bottom: 0px;
 } 
+
+.section-menu {
+    background-color: #2895BA;
+    padding-top: 0px;
+    padding-bottom: 0px;
+} 
+
+.section-heading-bg {
+    background-color: #2895BA;
+    background-image: url('./images/head.svg');
+    padding-top: 0px;
+    padding-bottom: 80px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.sticky + .section-heading-bg {
+    padding-top: 53px;
+}
 
 .section-me {
     background-color: #287b98;
