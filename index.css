@@ -3,19 +3,23 @@
 
 .heading {
     text-align: left;
+    margin: 0px;
 }
 
 h2 {
     font-size: 1.75em;
 }
+
 .menu {
     text-align: center;
 }
 
 .heading-title {
+    margin-top: 0px;
+    margin-bottom: 0px;
     text-align: center;
     text-shadow: 4px 4px 8px #660066;
-    font-size: 2.75em;
+    font-size: 3em;
 }
 
 /* Section: body&HTML! */
@@ -97,7 +101,6 @@ p {
     max-width: 50em;
     width: calc(100% - 30px);
     margin: auto;
-    padding: 15px;
 }
 
 ul {
@@ -106,7 +109,7 @@ ul {
 }
 
 li {
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 
 strong {
@@ -116,7 +119,8 @@ strong {
 /* ---------------------------------------------------------- */
 
 code[class*=language-],pre[class*=language-] {
-    font-size: 0.94em;
+    width: fit-content;
+    padding: 13px;
     border-radius: 32px;
 }
 
@@ -214,27 +218,28 @@ button:hover {
     background-repeat: no-repeat;
     width: 100%;
     float: left;
-    padding-top: 5px;
-    padding-bottom: 80px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .section-heading {
     background-color: #2895BA;
-    padding-top: 5px;
-    padding-bottom: 0px;
+    margin: 0px;
+    padding-top: 53px;
+    padding-bottom: 13px;
 } 
 
 .section-menu {
     background-color: #2895BA;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 13px;
+    padding-bottom: 33px;
 } 
 
 .section-heading-bg {
     background-color: #2895BA;
     background-image: url('./images/head.svg');
-    padding-top: 0px;
-    padding-bottom: 80px;
+    padding-top: 13px;
+    padding-bottom: 53px;
 }
 
 .sticky {
@@ -250,14 +255,20 @@ button:hover {
 .section-me {
     background-color: #287b98;
     background-image: url('./images/blog.svg');
+    padding-top: 43px;
+    padding-bottom: 43px;
 }
 
 .section-dev {
     background-color: #256178;
     background-image: url('./images/me.svg');
+    padding-top: 43px;
+    padding-bottom: 43px;
 }
 
 .section-blog {
     background-color: #204959;
     background-image: url('./images/dev.svg');
+    padding-top: 43px;
+    padding-bottom: 43px;
 } 

@@ -24,7 +24,6 @@ window.onload = function() {
 
     var section_menu = document.getElementsByClassName("section-menu")[0];
     var sticky = section_menu.offsetTop;
-    
     var inner = document.getElementsByClassName("inner")[0];
 
     inner.addEventListener("scroll", function() {
