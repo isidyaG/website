@@ -44,11 +44,13 @@ html {
    scroll-behavior: smooth;
 }
 
+/*
 pre #lang-js {
    background-color: #999;
    background-image: linear-gradient(0deg, #287b98, #C37000 82%);
    border: 1px hidden #999;
-   width: fit-content;
+   width: calc(100% - 40px);
+   overflow: auto;
    margin-left: auto;
    margin-right: auto;
    color: #F0F0F0;
@@ -62,17 +64,18 @@ pre #lang-js {
    position: relative;
    display: none;
 }
+*/
 
 .cat {
-    width: 150px;
-    height: 100px;
+    float: right;
+    margin-top: -100px;
 }
+
 /* Section: menu! */
 /* ---------------------------------------------------------- */
 
 .menu-item {
     color: #F0F0F0;
-    text-transform: lowercase;
     text-align: center;
     letter-spacing: 2px;
     font-weight: bold;
@@ -90,9 +93,9 @@ a:link {
 
 .menu-item:hover {
     padding: 10px;
-    margin: auto;
+    margin: 0px;
     background-color: #C37000;
-    cursor: grab;
+    cursor: pointer;
 }
 
 /* Section: content! */
@@ -141,18 +144,20 @@ li {
 }
 
 strong {
-    color: #002c50;
+    /* color: #00 2c 50; */
+    color: rgb(160,210,255);
 }
 
 /* Section: aboutme-content: modal&buttons */
 /* ---------------------------------------------------------- */
 
-code[class*=language-],pre[class*=language-] {
-    width: fit-content;
-    padding: 13px;
+pre[class*=language-] {
+    padding: 26px;
     border-radius: 32px;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+#contact-data {
+    display: none;
 }
 
 #cv-img {
@@ -160,7 +165,7 @@ code[class*=language-],pre[class*=language-] {
     max-height: 8em;
     border-radius: 50%;
     float: left;
-    padding-right: 8px;
+    margin-right: 8px;
     shape-outside: margin-box;
 }
 
@@ -229,19 +234,24 @@ button {
     border-radius: 32px;
     box-shadow: 2px 3px 7px #660066;
     background-color: inherit;
-    padding: 9px;
-    margin: 1px;
+    padding: 8px;
+    margin: 2px;
     color: #F0F0F0;
     text-align: center;
     font-weight: bold;
+    font-family: "Courier";
     transition: all 0.5s linear;
 } 
 
 button:hover {
-    padding: 10px;
-    margin: 0px;
+    padding: 8px;
+    margin: 2px;
     background-color: #C37000;
     cursor: grab;
+}
+
+#block-code {
+    padding: 4px;
 }
 
 /* Section: svg! */
@@ -260,20 +270,20 @@ button:hover {
 .section-heading {
     background-color: #2895BA;
     margin: 0px;
-    padding-top: 53px;
-    padding-bottom: 13px;
+    padding-top: 26px;
+    padding-bottom: 10px;
 } 
 
 .section-menu {
     background-color: #2895BA;
-    padding-top: 13px;
-    padding-bottom: 33px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 } 
 
 .section-heading-bg {
     background-color: #2895BA;
     background-image: url('./images/head.svg');
-    padding-top: 13px;
+    padding-top: 30px;
     padding-bottom: 53px;
 }
 
@@ -281,10 +291,11 @@ button:hover {
     position: fixed;
     top: 0px;
     width: 100%;
+    z-index: 1;
 }
 
 .sticky + .section-heading-bg {
-    padding-top: 53px;
+    padding-top: 84px;
 }
 
 .section-me {

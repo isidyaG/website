@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
     <title>Kitty Space 5000</title>
+    <link rel="stylesheet" href="./prism.css">
     <link rel="stylesheet" href="./index.css">
+    <script type="text/javascript" src="./prism.js"></script>
     <script type="text/javascript" src="./index.js"></script>
   </head>
   <body>
@@ -14,9 +16,9 @@
       </div>
       <div class="section-menu">
         <div class="section-content menu">
-          <a href="#About me"><span class="menu-item">About me</span></a> 
-          <a href="#Development"><span class="menu-item">Development</span></a>
-          <a href="#Blog"><span class="menu-item">Blog</span></a>
+          <a href="#About me"><span class="menu-item">about me</span></a> 
+          <a href="#Development"><span class="menu-item">development</span></a>
+          <a href="#Blog"><span class="menu-item">blog</span></a>
         </div>
       </div>
       <div class="section section-heading-bg">
@@ -50,12 +52,12 @@
             </p>
             <p>
               As a display of my ongoing efforts, you can find my contact
-              information in the following Javascript object:<button id="block-code">Click me!</button><br/>
+              information in the following Javascript object: <button id="block-code">Click me!</button><br/>
             </p>
           </div>
-          <pre><code id="lang-js">let contactData = { 
+          <pre id="contact-data"><code class="lang-js">let contactData = { 
     name: "hristina",
-    mail: "hrist.grozdanova" + "@" + "gmail.com", 
+    mail: "hrist.grozdanova" + "@" + "gmail.com", // spam protection
     github: "github.com/isidyag"
 }</code></pre>
         </div>   
@@ -67,9 +69,7 @@
           <p>
             Don't let that title fool you!
           </p>
-          <p>
             I'm still fairly new at programming. But, I've managed to do few things: 
-          </p>
           <ul>
             <li>
               <strong> build a website from scratch with HTML, CSS and JS</strong>
@@ -99,8 +99,7 @@
               <strong>started using Linux with a focus on the command line.</strong> 
               My journey as a beginner started from Ubuntu, but then went over
               Debian to Arch Linux, since I wanted to know how the things worked
-              underneath. That brought me into contact with the following things:<br/>
-              <br/>
+              underneath. That brought me into contact with the following things:
               <ul>
                 <li>
                   <strong>bash</strong> - got comfortable using the terminal, my favourite 
@@ -141,16 +140,16 @@
         <div class="section-content">  
           <a class="anchor" id="Blog"></a>
           <h2 class="heading">Blog</h2>
-            <a href="https://www.animatedimages.org/cat-cats-209.htm">
-                <img
-                src="https://www.animatedimages.org/data/media/209/animated-cat-image-0065.gif"
-                class="cat" border="0" alt="animated-cat-image-0065"/></a>
           <h3>Log Entry 2023-02-26 18:56:25</h3>
           <p class="blog-post">Added more content. Soon the menu will work, just give me a bit of time...</p>
           <h3>Log Entry 2023-02-26 18:15:15</h3>
           <p class="blog-post">Now I need to think what to write...</p>
           <h3>Log Entry 2023-02-26 18:13:35</h3>
           <p class="blog-post">The Website has been created!</p>
+            <a href="https://www.animatedimages.org/cat-cats-209.htm">
+              <img src="https://www.animatedimages.org/data/media/209/animated-cat-image-0065.gif"
+                  class="cat" border="0" alt="animated-cat-image-0065"/>
+            </a>
         </div>
       </div>
     </div>

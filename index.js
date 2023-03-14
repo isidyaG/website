@@ -41,9 +41,11 @@ window.onload = function() {
      //const btn = document.querySelector("#block-code");
      //const code = document.querySelector("#lang-js");
 
-     document.addEventListener("click", function() {
-         console.log("meow")
-         document.getElementById("lang-js").style.display = "block";
+    let btn = document.getElementById("block-code");
+
+    btn.addEventListener("click", function() {
+        document.getElementById("contact-data").style.display = "block";
+        btn.style.display = "none";
     })
 }
 
