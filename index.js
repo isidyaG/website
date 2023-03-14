@@ -22,9 +22,9 @@ window.onload = function() {
         }
     }
 
-    var section_menu = document.getElementsByClassName("section-menu")[0];
-    var sticky = section_menu.offsetTop;
-    var inner = document.getElementsByClassName("inner")[0];
+    let section_menu = document.getElementsByClassName("section-menu")[0];
+    let sticky = section_menu.offsetTop;
+    let inner = document.getElementsByClassName("inner")[0];
 
     inner.addEventListener("scroll", function() {
         if (inner.scrollTop > sticky) {
@@ -38,5 +38,12 @@ window.onload = function() {
         }
      })
     
+     //const btn = document.querySelector("#block-code");
+     //const code = document.querySelector("#lang-js");
+
+     document.addEventListener("click", function() {
+         console.log("meow")
+         document.getElementById("lang-js").style.visibility = "visible";
+    })
 }
 

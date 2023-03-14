@@ -1,13 +1,16 @@
 /* Section: heading! */
 /* ---------------------------------------------------------- */
 
-.heading {
+h2 {
+    color: #F0F0F0;
     text-align: left;
     margin: 0px;
+    font-size: 1.75em;
+    padding-bottom: 13px;
 }
 
-h2 {
-    font-size: 1.75em;
+#Aboutme {
+    padding-right: 20px;
 }
 
 .menu {
@@ -41,6 +44,20 @@ html {
    scroll-behavior: smooth;
 }
 
+#lang-js {
+   display: block;
+   width: 100%;
+   height: 100%;
+   line-height: 1em;
+   border: 1px hidden #777;
+   padding: 20px;
+   color: #FFFFFF;
+   visibility: hidden;
+   background-image: url("./images/border.png");
+   background-repeat: no-repeat;
+} 
+
+
 /* Section: menu! */
 /* ---------------------------------------------------------- */
 
@@ -51,11 +68,9 @@ html {
     letter-spacing: 2px;
     font-weight: bold;
     border:hidden 4px #660066;
-    border-top-left-radius:             32px;
-    border-top-right-radius:            32px;
-    border-bottom-left-radius:          32px;
-    border-bottom-right-radius:         32px;
-    padding: 6px;
+    border-radius: 32px;
+    padding: 9px;
+    margin: 1px;
     box-shadow: 2px 3px 7px #660066;
     transition: all 0.5s linear;
 }
@@ -65,7 +80,7 @@ a:link {
 }
 
 .menu-item:hover {
-    padding: 7px;
+    padding: 10px;
     margin: auto;
     background-color: #C37000;
     cursor: grab;
@@ -92,9 +107,10 @@ p {
 
 .column {
     columns: 22rem;
-    column-gap: 1.5em;
+    column-gap: 2em;
     hyphens: auto;
     text-align: justify;
+    padding-bottom: 13px;
 }
 
 .section-content {
@@ -106,13 +122,16 @@ p {
 ul {
     text-align: justify;
     hyphens: auto;
+    padding-left: 20px;
+    margin: 0px;
 }
 
 li {
-    padding-bottom: 0px;
+    padding-bottom: 20px;
 }
 
 strong {
+    color: #ee853b;
 }
 
 /* Section: aboutme-content: modal&buttons */
@@ -122,14 +141,23 @@ code[class*=language-],pre[class*=language-] {
     width: fit-content;
     padding: 13px;
     border-radius: 32px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #cv-img {
-    height: 7em;
+    max-width: 8em;
+    max-height: 8em;
+    border-radius: 50%;
     float: left;
-    margin-right: 1em;
-    border-radius: 20px;
+    padding-right: 8px;
+    shape-outside: margin-box;
 }
+
+#cv-img:hover {
+    transform: scale(1.3);
+}
+
 
 /* Section: Development-content: modal&buttons */
 /* ---------------------------------------------------------- */
@@ -188,14 +216,12 @@ code[class*=language-],pre[class*=language-] {
 button {
     display: inline-block;
     border: hidden 4px #660066;
-    border-top-left-radius:             32px;
-    border-top-right-radius:            32px;
-    border-bottom-left-radius:          32px;
-    border-bottom-right-radius:         32px;
+    border-radius: 32px;
     box-shadow: 2px 3px 7px #660066;
     background-color: inherit;
-    padding: 6px;
+    padding: 9px;
     margin: 1px;
+    margin-top: 10px;
     color: #F0F0F0;
     text-align: center;
     font-weight: bold;
@@ -203,7 +229,7 @@ button {
 } 
 
 button:hover {
-    padding: 7px;
+    padding: 10px;
     margin: 0px;
     background-color: #C37000;
     cursor: grab;
@@ -256,19 +282,19 @@ button:hover {
     background-color: #287b98;
     background-image: url('./images/blog.svg');
     padding-top: 43px;
-    padding-bottom: 43px;
+    padding-bottom: 63px;
 }
 
 .section-dev {
     background-color: #256178;
     background-image: url('./images/me.svg');
     padding-top: 43px;
-    padding-bottom: 43px;
+    padding-bottom: 63px;
 }
 
 .section-blog {
     background-color: #204959;
     background-image: url('./images/dev.svg');
     padding-top: 43px;
-    padding-bottom: 43px;
+    padding-bottom: 63px;
 } 
