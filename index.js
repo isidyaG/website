@@ -43,7 +43,7 @@ window.onload = function() {
 
      document.addEventListener("click", function() {
          console.log("meow")
-         document.getElementById("lang-js").style.visibility = "visible";
+         document.getElementById("lang-js").style.display = "block";
     })
 }
 
