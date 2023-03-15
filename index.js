@@ -22,6 +22,7 @@ window.onload = function() {
         }
     }
 
+    //sticky header:
     let section_menu = document.getElementsByClassName("section-menu")[0];
     let sticky = section_menu.offsetTop;
     let inner = document.getElementsByClassName("inner")[0];
