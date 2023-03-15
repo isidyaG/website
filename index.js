@@ -48,5 +48,12 @@ window.onload = function() {
         document.getElementById("contact-data").style.display = "block";
         btn.style.display = "none";
     })
+
+    let btn_img = document.getElementById("btn-i3");
+
+    btn_img.addEventListener("click", function() {
+        document.getElementById("i3wm-img").style.display = "block";
+        btn_img.style.display = "none";
+    })
 }
 

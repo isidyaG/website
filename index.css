@@ -1,10 +1,14 @@
 
 /* ------Section: body&HTML! --------------------------------- */
 
+title {
+    font-family: "monospace", "Courier", "Didot", "Lucida Console";
+}
+
 body {
-    font-family: "Courier", "Didot", "Lucida Console";
-    font-size: 1.2em;
-    color: #F0F0F0;
+    font-family: "monospace", "Courier", "Didot", "Lucida Console";
+    font-size: 1.1em;
+    color: #ede0d1;
     margin: 0px 0px 0px 0px;
     background-image: url('./images/wolf.jpg');
     background-repeat: no-repeat;
@@ -25,19 +29,21 @@ html {
 /* -----Section: heading!----------------------------------- */
 
 .heading-title {
+    color: #f2dfcb;
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
     text-shadow: 4px 4px 8px #660066;
-    font-size: 3em;
+    font-size: 2.9em;
 }
 
 h2 {
-    color: #F0F0F0;
+    color: #f2dfcb;
     text-align: left;
-    margin: 0px;
-    font-size: 1.75em;
-    padding-bottom: 13px;
+    margin-top: 2px;
+    margin-bottom: 9px;
+    padding-right: 5px;
+    font-size: 1.8em;
 }
 
 /* -----Section: menu!-------------------------------------- */
@@ -47,7 +53,7 @@ h2 {
 }
 
 .menu-item {
-    color: #F0F0F0;
+    color: #ede0d1;
     text-align: center;
     letter-spacing: 2px;
     font-weight: bold;
@@ -59,8 +65,9 @@ h2 {
     transition: all 0.5s linear;
 }
 
-a:link {
+a.menu-item:link {
     text-decoration: none!important;
+    color: #f2dfcb;
 }
 
 .menu-item:hover {
@@ -79,17 +86,9 @@ a:link {
     visibility: hidden;
 }
 
-#Aboutme {
-    padding-right: 20px;
-}
-
 p {
     margin-block-start: 0px;
     margin-inline-start: 0px;
-}
-
-.blog-post {
-    font-style: italic;
 }
 
 .section-content {
@@ -136,6 +135,23 @@ pre[class*=language-] {
 
 /* ----Section: Development-content: modal&buttons------------------------------ */
 
+.section-content p {
+    width: calc(100% - 30px);
+}
+
+#i3wm-img {
+    max-width: calc(100% - 15px);
+    max-height: 55em;
+    margin-top: 0px;
+    margin-bottom: 13px;
+    display: none;
+    border-radius: 26px;
+}
+
+#btn-i3 {
+    padding: 4px;
+}
+
 .inline-img {
     height: 1em;
 }
@@ -176,7 +192,7 @@ pre[class*=language-] {
 .close {
     color: #aaaaaa;
     float: right;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: bold;
 }
 
@@ -195,10 +211,10 @@ button {
     background-color: inherit;
     padding: 8px;
     margin: 2px;
-    color: #F0F0F0;
+    color: #ede0d1;
     text-align: center;
     font-weight: bold;
-    font-family: "Courier";
+    font-family: "monospace", "Courier";
     transition: all 0.5s linear;
 } 
 
@@ -216,6 +232,18 @@ ul {
     margin: 0px;
 }
 
+.links {
+    color: rgb(160,210,255);
+}
+
+ul ul li {
+    font-size: 0.9em;
+}
+
+b { 
+    font-size: 1.1em;
+}
+
 li {
     padding-top: 9px;
     padding-bottom: 9px;
@@ -223,7 +251,8 @@ li {
 
 strong {
     /* color: #00 2c 50; */
-    color: rgb(160,210,255);
+/*    color: rgb(160,210,255); */
+    color: #f2dfcb;
 }
 
 /* ----Section: sections, sticky + svg!-------------------------------------------------- */
@@ -288,4 +317,21 @@ strong {
     background-image: url('./images/dev.svg');
     padding-top: 43px;
     padding-bottom: 63px;
-} 
+}
+
+/*----Section: Blog!--------------------------------------*/
+
+.blog-post {
+    max-width: calc(80% - 15px);
+    margin: 0px;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+h3 {
+    color: #f2dfcb;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    font-size: 1.1em;
+}
+
