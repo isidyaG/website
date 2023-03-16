@@ -7,7 +7,7 @@ title {
 
 body {
     font-family: "monospace", "Courier", "Didot", "Lucida Console";
-    font-size: 1.35em;
+    font-size: 1.33em;
     color: #ede0d1;
     margin: 0px 0px 0px 0px;
     background-image: url('./images/wolf.jpg');
@@ -255,6 +255,8 @@ ul li li {
 .disclaimer { 
     font-size: 0.75em;
     max-width: calc(86% - 39px);
+    text-indent: 0.29em;
+    text-align-last: center;
 }
 
 li {
