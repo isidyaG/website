@@ -249,6 +249,10 @@ li {
     padding-bottom: 9px;
 }
 
+ul li::marker {
+    content: "~"; 
+}
+
 strong {
     /* color: #00 2c 50; */
 /*    color: rgb(160,210,255); */
