@@ -140,7 +140,7 @@ pre[class*=language-] {
 } */
 
 .section-content ul li {
-    width: calc(90% - 20px);
+    width: calc(93% - 1px);
 }
 
 .section-content ul li li {
