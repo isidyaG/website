@@ -32,16 +32,13 @@ window.onload = function() {
             section_menu.classList.add("sticky");
             let scrollBarWidth = inner.offsetWidth - inner.clientWidth;
             section_menu.style.width = "calc(100% - " + scrollBarWidth.toString() + "px)";
-            // section_menu.style.top = window.pageYOffset.toString();
         } else {
             section_menu.classList.remove("sticky");
             section_menu.style.width = "100%";
         }
      })
     
-     //const btn = document.querySelector("#block-code");
-     //const code = document.querySelector("#lang-js");
-
+    //buttons in section-dev
     let btn = document.getElementById("block-code");
 
     btn.addEventListener("click", function() {

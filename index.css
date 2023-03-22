@@ -59,9 +59,10 @@ h2 {
     font-weight: bold;
     border:hidden 4px #30434c;
     border-radius: 32px;
+    background-color: #4a6d7d;
     padding: 9px;
     margin: 1px;
-    box-shadow: 2px 3px 7px #232a31;
+    box-shadow: 5px 3px 8px #232a31;
     transition: all 0.5s linear;
 }
 
@@ -92,7 +93,7 @@ p {
 }
 
 .section-content {
-    max-width: 50em;
+    max-width: 40em;
     width: calc(100% - 30px);
     margin: auto;
 }
@@ -105,7 +106,7 @@ pre[class*=language-] {
 }
 
 .column {
-    columns: 22rem;
+    columns: 40rem;
     column-gap: 2em;
     hyphens: auto;
     text-align: justify;
@@ -123,6 +124,7 @@ pre[class*=language-] {
     float: left;
     margin-right: 8px;
     shape-outside: margin-box;
+    transition: 500ms linear;
 }
 
 #cv-img:hover {
@@ -134,18 +136,6 @@ pre[class*=language-] {
 }
 
 /* ----Section: Development-content: modal&buttons------------------------------ */
-
-/*.section-content p {
-    width: calc(90% - 20px);
-} */
-
-.section-content ul li {
-    width: calc(93% - 1px);
-}
-
-.section-content ul li li {
-    width: calc(90% + 20px);
-}
 
 #i3wm-img {
     max-width: calc(100% - 15px);
@@ -215,8 +205,8 @@ button {
     display: inline-block;
     border: hidden 4px #313c48;
     border-radius: 32px;
-    box-shadow: 2px 3px 7px #232a31;
-    background-color: inherit;
+    box-shadow: 5px 3px 8px #232a31;
+    background-color: #3e5a66;
     padding: 8px;
     margin: 2px;
     color: #ede0d1;
@@ -243,20 +233,19 @@ ul {
     color: rgb(160,210,255);
 }
 
-ul li {
-    margin-left: 35px;
+ ul li {
+    margin-inline-start: -7px;
 }
 
 ul li li {
     font-size: 0.9em;
-    margin-left: 20px;
-}
+    margin-inline-start: -7px;
+} 
 
 .disclaimer { 
     font-size: 0.75em;
-    max-width: calc(86% - 39px);
-    text-indent: 0.29em;
-    text-align-last: center;
+/*    max-width: calc(86% - 39px); */
+    text-align: center;
 }
 
 li {
@@ -269,8 +258,6 @@ ul li::marker {
 }
 
 strong {
-    /* color: #00 2c 50; */
-/*    color: rgb(160,210,255); */
     color: #f2dfcb;
 }
 
@@ -341,9 +328,9 @@ strong {
 /*----Section: Blog!--------------------------------------*/
 
 .blog-post {
-    max-width: calc(80% - 15px);
-    margin-top: 8px;
-    margin-bottom: 8px;
+    max-width: calc(100% - 15px); 
+    margin-top: 12px;
+    margin-bottom: 12px;
     font-style: italic;
     font-size: 0.9em;
 }
@@ -351,7 +338,7 @@ strong {
 h3 {
     font-size: 1.2em;  
     color: #f2dfcb;
-    margin-top: 9px;
-    margin-bottom: 9px;
+    margin-top: 13px;
+    margin-bottom: 13px;
 }
 
