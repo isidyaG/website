@@ -59,7 +59,7 @@ h2 {
     font-weight: bold;
     border:hidden 4px #30434c;
     border-radius: 32px;
-    background-color: #4a6d7d;
+    background-color: inherit;
     padding: 9px;
     margin: 1px;
     box-shadow: 5px 3px 8px #232a31;
@@ -125,9 +125,9 @@ pre[class*=language-] {
 #cv-img {
     width: auto;
     height: 9em;
-    border-radius: 18px 44% 44% 18px;
-    -webkit-border-radius: 18px 44% 44% 18px;
-    -moz-border-radius: 18px 44% 44% 18px;
+    border-radius: 18px 39% 39% 18px;
+    -webkit-border-radius: 18px 39% 39% 18px;
+    -moz-border-radius: 18px 39% 39% 18px;
     float: left;
     margin-right: 8px;
     shape-outside: margin-box;
@@ -213,7 +213,7 @@ button {
     border: hidden 4px #313c48;
     border-radius: 32px;
     box-shadow: 5px 3px 8px #232a31;
-    background-color: #3e5a66;
+    background-color: inherit;
     padding: 8px;
     margin: 2px;
     color: #ede0d1;
