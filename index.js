@@ -52,5 +52,17 @@ window.onload = function() {
         document.getElementById("i3wm-img").style.display = "block";
         btn_img.style.display = "none";
     })
+
+    //disable context-menu
+    let cv_img = document.getElementById("cv-img");
+
+    cv_img.addEventListener('contextmenu', disableRightClick, false) 
+    function disableRightClick(event) {
+        if (event.button == 2) {
+            alert("I'm sorry, right-click context menu is disabled. :)");
+            event.preventDefault();
+            return false;
+        }
+    }
 }
 
